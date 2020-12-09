@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <title>Meme Generator</title>
+    <style>
+        #meme_text {
+            background-color: transparent;
+            font-size: 40px;
+            font-family: "Impact";
+            color: white;
+            text-shadow: black 0px 0px 10px;
+            width: 600px;
+            position: absolute;
+            left: 15px;
+            top: 400px;
+            }
+    </style>
+</head>
+<body>
+    <div class="background-blue">
+        <header class="container-fluid">
+                <div class="container mx-auto text-center mb-5 title">
+                    <h1 class="text-info">Welcome to Make-A-Meme!</h1>
+                    <h2>Create your own unique meme!</h2>
+            </div>
+            <div class="steps">
+                <p></p>
+                
+            </div>
+    
+        </header>
+    <form id ='meme-form'>
+        <div class="group-form row mb-5">
+            <label for="link-to-pic" class="col-md-2 col-form-label">Place the image's URL here:</label>
+        <div class="col-md-10">
+              <input type="url" class="form-control" id="uploaded-img" placeholder="Enter URL" required>
+            </div>
+
+         </div>
+        <div class="group-form row mb-5">
+            <label for="text-on-top" class="col-md-2 col-form-label">Enter text for top:</label>
+        <div class="col-md-10">
+              <input type="text" class="form-control" id="text-top" placeholder="Enter text (Optional)">
+        </div>
+    </div>
+    <!-- text-bottom section of form -->
+    <div class="group-form row mb-5">
+            <label for="text-on-bottom" class="col-md-2 col-form-label">Enter text for bottom:</label>
+        <div class="col-md-10">
+              <input type="text" class="form-control" id="text-bottom" placeholder="Enter text (Optional)">
+        </div>
+    </div>
+    <div class="group-form row mb-5">
+            <label class="col-md-2 col-form-label">&nbsp;</label>
+        <div class="col-md-2">
+              <input type="submit" class="btn btn-success" value="Create your meme!">
+        </div>
+    </div>
+       
+    </form>
+ 
+<section class="meme-gallery">
+
+	<ul class="gallery">
+	</ul>
+	
+
+</section>
+    <!-- <script type="text/javascript">
+    </script> -->
+    <script src="app.js"></script>
+</body>
+</html>
